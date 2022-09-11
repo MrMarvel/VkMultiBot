@@ -1,0 +1,3 @@
+[submodule "src/modules/dao_module"]
+	path = src/modules/dao_module
+	url = https://github.com/SADT-Boting/DAO-Module
