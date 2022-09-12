@@ -36,3 +36,7 @@ class ModuleController:
                 m.module_will_unload()
             finally:
                 print(f"Модуль \"{m.name}\" был выгружен!")
+
+    def join(self):
+        for t in self._threads.values():
+            t.join()
