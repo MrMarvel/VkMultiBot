@@ -15,9 +15,10 @@ from .bot.bot_controller import BotController
 
 
 class QueueModule(Module):
+
     @property
     def name(self) -> str:
-        return "Queue VK Module"
+        return "Модуль очередей"
 
     def module_will_load(self):
         pass
@@ -40,12 +41,14 @@ def print_hi(name: str) -> None:
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
+
 # Press the green button in the gutter to run the script.
 
 
 vk: VkApi | None = None
 
-thread_chats: threading.Thread | None = None  # DEPRECATED
+
+thread_chats: threading.Thread | None = None # DEPRECATED
 
 
 def run():

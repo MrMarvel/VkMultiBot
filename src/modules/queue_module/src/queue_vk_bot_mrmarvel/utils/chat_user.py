@@ -24,7 +24,6 @@ class User:
     admin_list_vk_id = str(os.environ.get("ADMIN_LIST")).split(',')
 
     def __init__(self, user_id: int):
-        super().__init__()
         self._user_id: int = user_id
         self._admin_in_chat_ids = list[int]()
         self._name: str | None = None

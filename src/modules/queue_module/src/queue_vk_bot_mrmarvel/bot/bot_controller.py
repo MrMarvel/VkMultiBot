@@ -131,7 +131,7 @@ class BotController(IBot):
         :return:
         """
         msg = {'user_id': user_id, 'message': message, 'random_id': time.time_ns()}
-        self.send_msg_packed_by_json(msg)
+        self.send_msg_packed_by_json(self._vk, msg)
 
     def write_msg_to_chat(self, chat_id, message) -> None:
         """
@@ -240,7 +240,7 @@ class BotController(IBot):
 
                     # Если оно имеет метку для меня( то есть бота)
                     if event.to_me:
-                        self.got_msg_from_user_to_bot_in_ls(ls_msg_event=event)
+                        self.got_msg_from_user_to_bot_in_ls(vk=self._vk, ls_msg_event=event)
         except Exception as e:
             print(e)
             raise e
