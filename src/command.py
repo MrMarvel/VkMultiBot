@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
-from typing import Any, List, Dict, Optional
+from typing import Any, Dict, Optional
 
 from vk_api.bot_longpoll import VkBotMessageEvent
 
 from event_manager import EventListener, Event, EventType, EventManager
-from src.global_bot_i import IGlobalBot
+from src.utils.global_bot_i import IGlobalBot
 
 
 class Command(ABC):

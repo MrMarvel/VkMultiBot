@@ -1,9 +1,6 @@
 from abc import ABC, abstractmethod
 from enum import Enum, auto
-from threading import Thread
-from typing import List, Dict, Optional, Any
-
-from src.global_bot_i import IGlobalBot
+from typing import List, Dict, Any
 
 
 class EventType(Enum):

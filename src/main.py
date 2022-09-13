@@ -1,6 +1,5 @@
 import os
 from threading import Thread
-from typing import Any
 
 from vk_api import VkApi
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
@@ -8,11 +7,9 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from command import CommandManager
 from event_manager import EventManager, GotMessageFromPublicChatEvent
 from module_controller import ModuleController
-from src.global_bot_i import IGlobalBot
+from src.utils.global_bot_i import IGlobalBot
 from src.modules.fancy_old_queue_module.src.queue_vk_bot_mrmarvel.app import FancyOldQueueModule
 from src.modules.informator_module.main import InformatorModule
-
-from src.modules.new_queue_module.queue_module import NewQueueModule
 
 
 def long_poll_loop_listen(vk: VkApi, group_id: int, em: EventManager):

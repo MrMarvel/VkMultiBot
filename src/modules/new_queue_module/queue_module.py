@@ -1,14 +1,11 @@
-import os
-from typing import Any, Final, List
+from typing import Final, List
 
-from vk_api import VkApi
-from vk_api.bot_longpoll import VkBotMessageEvent, DotDict
+from vk_api.bot_longpoll import VkBotMessageEvent
 from vk_api.utils import get_random_id
 from vk_api.vk_api import VkApiMethod
 
-from command import Command, CommandManager
-from event_manager import EventListener, Event, EventType, EventManager
-from src.global_bot_i import IGlobalBot
+from src.event_manager import EventListener, Event, EventType, EventManager
+from src.utils.global_bot_i import IGlobalBot
 from src.modules.dao_module.src.DAO import DAO
 from src.utils.module import Module
 
