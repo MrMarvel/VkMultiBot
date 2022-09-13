@@ -7,8 +7,8 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from vk_api.longpoll import VkLongPoll, VkEventType
 from vk_api.utils import get_random_id
 
-from src.modules.informator_module.june import DAO
-from src.utils.module import Module
+from .june import DAO
+from .module import Module
 
 
 main: Optional['Main'] = None

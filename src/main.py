@@ -7,9 +7,9 @@ from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from command import CommandManager
 from event_manager import EventManager, GotMessageFromPublicChatEvent
 from module_controller import ModuleController
-from src.utils.global_bot_i import IGlobalBot
-from src.modules.fancy_old_queue_module.src.queue_vk_bot_mrmarvel.app import FancyOldQueueModule
-from src.modules.informator_module.main import InformatorModule
+from utils.global_bot_i import IGlobalBot
+from modules.fancy_old_queue_module.src.queue_vk_bot_mrmarvel.app import FancyOldQueueModule
+from modules.informator_module.main import InformatorModule
 
 
 def long_poll_loop_listen(vk: VkApi, group_id: int, em: EventManager):
@@ -44,17 +44,32 @@ class VkListener:
 
 
 class GlobalBot(IGlobalBot):
+    """
+    Основной класс
+    """
     def get_event_manager(self):
+        """
+        Получение менеджера событий
+        """
         return self._em
 
     def get_command_manager(self):
+        """
+        Получение менеджера комманд
+        """
         return self._cm
 
     @property
     def vk(self) -> VkApi:
+        """
+        Получение ВК API
+        """
         return self._vk
 
     def __init__(self):
+        """
+        Запуск бота через конструктор!
+        """
         self._token: str | None = os.environ.get('TOKEN')
         self._bot_group_id: int | None = os.environ.get('BOT_GROUP_ID')
 

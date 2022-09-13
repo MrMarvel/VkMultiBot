@@ -5,6 +5,9 @@ from vk_api import VkApi
 
 
 class IGlobalBot(Protocol):
+    """
+    Интерфейс бота
+    """
 
     @abstractmethod
     def get_event_manager(self):

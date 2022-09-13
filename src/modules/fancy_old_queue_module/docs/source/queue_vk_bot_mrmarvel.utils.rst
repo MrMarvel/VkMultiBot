@@ -20,6 +20,14 @@ queue\_vk\_bot\_mrmarvel.utils.model\_and\_observer module
    :undoc-members:
    :show-inheritance:
 
+queue\_vk\_bot\_mrmarvel.utils.module module
+--------------------------------------------
+
+.. automodule:: queue_vk_bot_mrmarvel.utils.module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

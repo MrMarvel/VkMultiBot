@@ -1,7 +1,7 @@
 from threading import Thread
 from typing import List, Dict
 
-from src.utils.module import Module
+from utils.module import Module
 
 
 class ModuleController:

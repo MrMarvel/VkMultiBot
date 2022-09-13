@@ -9,7 +9,7 @@ from vk_api import VkApi
 # Press Shift+F10 to execute it or replace it with your code. Press Double
 # Shift to search everywhere for classes, files, tool windows, actions,
 # and settings.
-from src.utils.module import Module
+from .utils.module import Module
 from . import gl_vars
 from .bot.bot_controller import BotController
 

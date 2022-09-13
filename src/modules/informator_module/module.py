@@ -2,9 +2,7 @@ from abc import abstractmethod, ABC
 
 
 class Module(ABC):
-    """
-    Абстрактный класс модуля для бота
-    """
+
     def __init__(self):
         pass
 

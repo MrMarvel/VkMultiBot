@@ -4,7 +4,7 @@ from typing import Any, Dict, Optional
 from vk_api.bot_longpoll import VkBotMessageEvent
 
 from event_manager import EventListener, Event, EventType, EventManager
-from src.utils.global_bot_i import IGlobalBot
+from utils.global_bot_i import IGlobalBot
 
 
 class Command(ABC):
